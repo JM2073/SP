@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Week2Ex2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Car Parking" Height="388.55" Width="408.612">
     <Grid>
-        
+        <Label Content="How Long would you like to stay?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,20,0,0"/>
+        <Button x:Name="btnConfrim" Content="Confirm" HorizontalAlignment="Left" Margin="152,51,0,0" VerticalAlignment="Top" Width="75" Click="btnConfrim_Click"/>
+        <TextBox x:Name="TxtDurationOfStay" HorizontalAlignment="Left" Height="23" Margin="23,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Enter in hours your stay length." />
+        <Label Background="LightGray" x:Name="lblStayDuration" Content="" HorizontalAlignment="Left" Margin="131,78,0,0" VerticalAlignment="Top" Width="127"/>
+        <Label Background="LightGray" x:Name="lblCostToStay" Content="" HorizontalAlignment="Left" Margin="107,109,0,0" VerticalAlignment="Top" Width="151"/>
+        <Label Content="you can stay untill:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,78,0,0"/>
+        <Label Content="Cost To stay: £" HorizontalAlignment="Left" Margin="23,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.05,0.415"/>
+        <Button x:Name="btnTwoPounds" Content="£2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" Margin="34,211,0,0" Click="btnTwoPounds_Click"/>
+        <Button x:Name="btnOnePound" Content="£1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" Margin="73,211,0,0" Click="btnOnePound_Click"/>
+        <Button x:Name="btnFiftyPence" Content="50p" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" Margin="111,211,0,0" Click="btnFiftyPence_Click"/>
+        <Label Content="Enter coins:" HorizontalAlignment="Left" Margin="23,180,0,0" VerticalAlignment="Top"/>
+        <Label Content="Total Paid: £" HorizontalAlignment="Left" Margin="23,248,0,0" VerticalAlignment="Top"/>
+        <Label Content="Left to pay: £" HorizontalAlignment="Left" Margin="23,279,0,0" VerticalAlignment="Top"/>
+        <Label Background="LightGray" x:Name="lblTotalPaid" Content="0" HorizontalAlignment="Left" Margin="96,248,0,0" VerticalAlignment="Top" Width="104"/>
+        <Label Background="LightGray" x:Name="lblLeftToPay" Content="0" HorizontalAlignment="Left" Margin="102,279,0,0" VerticalAlignment="Top" Width="104"/>
+        <Label Content="Charges:&#xD;&#xA;&#xD;&#xA;1 hour - £1.50&#xD;&#xA;2 hour - £2.50&#xD;&#xA;4 hour - £4.00" HorizontalAlignment="Left" Margin="276,43,0,0" VerticalAlignment="Top" Height="92" Width="106"/>
+        <StatusBar Height="39" VerticalAlignment="Bottom">
+            <Label  Content="Time ="/>
+            <Label x:Name="lblCurrentTime" Content=""/>
+
+        </StatusBar>
     </Grid>
 </Window>
