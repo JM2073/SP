@@ -1,0 +1,22 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Week2"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="Week2.MainWindow"
+        mc:Ignorable="d"
+        Title="Basic Calculator" Height="254" Width="364">
+    <Grid>
+        <Button x:Name="BtnDevid" Content="/" HorizontalAlignment="Left" Margin="143,148,0,0" VerticalAlignment="Top" Width="38" Click="BtnDevid_Click"/>
+        <Button x:Name="BtnMultiply" Content="*" HorizontalAlignment="Left" Margin="73,106,0,0" VerticalAlignment="Top" Width="38" Click="BtnMultiply_Click"/>
+        <Button x:Name="BtnPlus" Content="+" HorizontalAlignment="Left" Margin="73,148,0,0" VerticalAlignment="Top" Width="38" Click="BtnPlus_Click"/>
+        <Button x:Name="BtnMinus" Content="-" HorizontalAlignment="Left" Margin="143,106,0,0" VerticalAlignment="Top" Width="38" Click="BtnMinus_Click"/>
+        <TextBox x:Name="TxtBoxOne" HorizontalAlignment="Left" Height="23" Margin="73,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" TextChanged="TxtBoxOne_TextChanged"/>
+        <TextBox x:Name="TxtBoxTwo" HorizontalAlignment="Left" Height="23" Margin="143,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38"/>
+        <Label x:Name="lblAnswer" Background="LightGray" Content="" HorizontalAlignment="Left" Margin="202,67,0,0" VerticalAlignment="Top" Width="124"/>
+        <Label Content="please enter a number into the first box and the second box &#xD;&#xA;then select the operation you would like to perform. " Margin="10,10,10,0" VerticalAlignment="Top" Height="48"/>
+        <Label x:Name="lblError"  Content="" Margin="10,187,10,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
