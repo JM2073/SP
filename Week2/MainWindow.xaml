@@ -12,7 +12,7 @@
         <Button x:Name="BtnMultiply" Content="*" HorizontalAlignment="Left" Margin="73,106,0,0" VerticalAlignment="Top" Width="38" Click="BtnMultiply_Click"/>
         <Button x:Name="BtnPlus" Content="+" HorizontalAlignment="Left" Margin="73,148,0,0" VerticalAlignment="Top" Width="38" Click="BtnPlus_Click"/>
         <Button x:Name="BtnMinus" Content="-" HorizontalAlignment="Left" Margin="143,106,0,0" VerticalAlignment="Top" Width="38" Click="BtnMinus_Click"/>
-        <TextBox x:Name="TxtBoxOne" HorizontalAlignment="Left" Height="23" Margin="73,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" TextChanged="TxtBoxOne_TextChanged"/>
+        <TextBox x:Name="TxtBoxOne" HorizontalAlignment="Left" Height="23" Margin="73,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38"/>
         <TextBox x:Name="TxtBoxTwo" HorizontalAlignment="Left" Height="23" Margin="143,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="38"/>
         <Label x:Name="lblAnswer" Background="LightGray" Content="" HorizontalAlignment="Left" Margin="202,67,0,0" VerticalAlignment="Top" Width="124"/>
         <Label Content="please enter a number into the first box and the second box &#xD;&#xA;then select the operation you would like to perform. " Margin="10,10,10,0" VerticalAlignment="Top" Height="48"/>

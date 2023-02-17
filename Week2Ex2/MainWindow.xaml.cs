@@ -89,5 +89,10 @@ namespace Week2Ex2
             lblTotalPaid.Content = TotalPaid;
             lblLeftToPay.Content = LeftToPay;
         }
+
+        private void TimeSetter(object sender, EventArgs e)
+        {
+            lblCurrentTime.Content = DateTime.Now.ToString();
+        }
     }
 }

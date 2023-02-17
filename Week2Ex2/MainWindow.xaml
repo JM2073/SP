@@ -25,7 +25,7 @@
         <Label Content="Charges:&#xD;&#xA;&#xD;&#xA;1 hour - £1.50&#xD;&#xA;2 hour - £2.50&#xD;&#xA;4 hour - £4.00" HorizontalAlignment="Left" Margin="276,43,0,0" VerticalAlignment="Top" Height="92" Width="106"/>
         <StatusBar Height="39" VerticalAlignment="Bottom">
             <Label  Content="Time ="/>
-            <Label x:Name="lblCurrentTime" Content=""/>
+            <Label x:Name="lblCurrentTime" Content="" Initialized="TimeSetter"/>
 
         </StatusBar>
     </Grid>
